@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior-y:auto;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script>
+(function(){
+  var origWarn = console.warn;
+  console.warn = function(){
+    if (arguments[0] && typeof arguments[0] === 'string' && arguments[0].indexOf('cdn.tailwindcss.com') !== -1) return;
+    origWarn.apply(console, arguments);
+  };
+})();
+</script>
+<script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container": "#20201c",
+          "surface-tint": "#d7c3b6",
+          "on-surface-variant": "#d1c4bc",
+          "surface-container-high": "#2a2a26",
+          "on-tertiary": "#2f312e",
+          "secondary-fixed": "#e6e2d8",
+          "on-secondary-fixed": "#1d1c16",
+          "on-tertiary-container": "#edede8",
+          "on-primary": "#3a2e25",
+          "inverse-surface": "#e5e2db",
+          "on-tertiary-fixed-variant": "#464744",
+          "on-error-container": "#ffdad6",
+          "tertiary-container": "#6a6b67",
+          "on-primary-fixed-variant": "#52443a",
+          "error": "#ffb4ab",
+          "outline-variant": "#4e453f",
+          "on-secondary": "#32302a",
+          "tertiary": "#c6c7c2",
+          "error-container": "#93000a",
+          "secondary-fixed-dim": "#cac6bd",
+          "on-secondary-fixed-variant": "#484740",
+          "surface-bright": "#3a3935",
+          "on-secondary-container": "#bcb8af",
+          "secondary": "#cac6bd",
+          "on-tertiary-fixed": "#1a1c19",
+          "primary-fixed-dim": "#d7c3b6",
+          "surface-container-lowest": "#0e0e0b",
+          "inverse-on-surface": "#31312c",
+          "tertiary-fixed-dim": "#c6c7c2",
+          "on-primary-fixed": "#241911",
+          "on-primary-container": "#ffe9db",
+          "outline": "#9a8f88",
+          "surface-container-low": "#1c1c18",
+          "surface-container-highest": "#353530",
+          "background": "#141410",
+          "secondary-container": "#4b4942",
+          "primary": "#d7c3b6",
+          "inverse-primary": "#6b5b51",
+          "on-error": "#690005",
+          "surface": "#141410",
+          "on-background": "#e5e2db",
+          "tertiary-fixed": "#e3e3de",
+          "on-surface": "#e5e2db",
+          "primary-container": "#78685d",
+          "primary-fixed": "#f4ded1",
+          "surface-variant": "#353530",
+          "surface-dim": "#141410"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-xl": "6rem",
+          "space-xs": "0.375rem",
+          "gutter": "2rem",
+          "space-sm": "0.75rem",
+          "space-md": "1.5rem",
+          "margin": "3rem",
+          "space-lg": "3rem"
+        },
+        "fontFamily": {
+          "label-md": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Shippori Mincho"
+          ],
+          "headline-md": [
+            "Shippori Mincho"
+          ],
+          "headline-sm": [
+            "Shippori Mincho"
+          ],
+          "headline-lg": [
+            "Shippori Mincho"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "1.4",
+              "letterSpacing": "0.08em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "1.5",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "1.4",
+              "letterSpacing": "0.1em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-xl": [
+            "48px",
+            {
+              "lineHeight": "1.2",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "1.3",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "1.4",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "1.25",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "1.6",
+              "fontWeight": "300"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "1.6",
+              "fontWeight": "300"
+            }
+          ]
+        }
+      },
+    },
+  }
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script>
+(function() {
+  function checkViewport() {
+    if (window.innerWidth < 768) {
+      var currentFile = window.location.pathname.split('/').pop() || 'index.html';
+      window.location.replace('../mobile/' + currentFile + window.location.search + window.location.hash);
+    }
+  }
+  checkViewport();
+  window.addEventListener('resize', checkViewport);
+})();
+</script>
+</head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-md"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-12"><span class="font-headline-md tracking-wider text-primary">GLAMOUR CENTRE</span><nav class="hidden md:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container rounded-lg"><a class="font-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="home" href="index.html">Home</a><a class="font-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="treatments" href="#">Treatments</a><a class="font-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="about" href="about.html">About</a><a class="font-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="contact" href="contact.html">Contact</a></nav></div><div class="flex items-center gap-space-md"><a class="hidden lg:flex items-center gap-space-xs font-body-sm text-secondary hover:text-on-surface transition-colors" href="tel:26283838"><span class="material-symbols-outlined text-[18px]">call</span>26 283 838</a><a class="bg-primary text-on-primary font-label-md px-space-md py-space-sm rounded-lg hover:bg-primary-fixed transition-colors flex items-center gap-space-xs" href="#">Book on WhatsApp</a></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full min-h-screen flex flex-col items-start justify-start pt-32 pb-20 px-gutter bg-cover bg-center overflow-hidden" data-alt="A luxurious minimalist spa interior with warm ambient lighting, natural stone walls, soft linen textures, and a serene water feature reflecting tranquility and elite wellness." style="background-image: linear-gradient(to bottom, rgba(20,20,16,0.5), rgba(20,20,16,0.95)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAJsAO3mEyr5YrLlah4MViSXaYDnfWYx6tAwm0Y_7Q5__0muaKhEveag2rjPleKco7OHQDUbzKhImEs0bFixz3lsW-63ZsLPfvqo8zUCW6WR6viaNmUqO-8LsjGzy4o_hKL4oCpKncJB3nMnNEsG997Y-hA1D4aaoxLrDdsvANtGNXRnyRPW9eRvpvsS6xuy_mwL2DZCTV9yGYbT6egxNORmXpHmgqZZOWjEZl4nq3Ru6e6_U2Mz_sSAQVfFvt1lzkqVOBD1PXUPP-G')">
+<!-- Floating background ambient effect -->
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-surface pointer-events-none"></div>
+    <!-- ENFORCED SUBTLE BOTTOM FADE -->
+    <div class="absolute bottom-0 inset-x-0 h-28 md:h-44 pointer-events-none z-20" style="background: linear-gradient(to top, #171713 0%, rgba(11,15,25,0.7) 40%, transparent 100%);"></div>
+    
+<div class="max-w-5xl mx-auto flex flex-col items-center text-center relative z-10 my-auto">
+<!-- Accolade Pill -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high/80 backdrop-blur-md mb-space-md border border-outline-variant/30 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">verified</span>
+<span class="font-label-md text-primary tracking-widest uppercase">AWARD OF EXCELLENCE 2026</span>
+</div>
+<!-- Headline -->
+<h1 class="font-headline-xl text-on-surface mb-space-md max-w-4xl tracking-tight">
+        The Art of Bespoke Sanctuary &amp; Restoration
+      </h1>
+<!-- Subheadline -->
+<p class="font-body-lg text-on-surface-variant max-w-2xl mb-space-xl font-light">
+        Immerse yourself in a sanctuary of bespoke restoration, where ancient botanical rituals meet modern precision craftsmanship.
+      </p>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-space-md">
+<a class="bg-primary text-on-primary font-label-md px-space-xl py-space-md rounded-lg hover:bg-primary-fixed transition-all duration-300 shadow-md" href="#heritage">
+          Explore Rituals
+        </a>
+<a class="bg-surface-container-high/80 backdrop-blur-md text-on-surface font-label-md px-space-xl py-space-md rounded-lg hover:bg-surface-container-highest transition-all duration-300 border border-outline-variant/30" href="#concierge">
+          Concierge Service
+        </a>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-space-xs opacity-60">
+<span class="font-label-sm uppercase tracking-widest text-on-surface-variant">Scroll</span>
+<span class="material-symbols-outlined text-[18px] animate-bounce text-primary">arrow_downward</span>
+</div>
+</section>
+<!-- HERITAGE & VISION NARRATIVE -->
+<section class="w-full py-space-xl px-gutter bg-surface" id="heritage">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="h-[1px] w-12 bg-primary"></span>
+<span class="font-label-md text-primary uppercase tracking-widest">Our Heritage &amp; Vision</span>
+</div>
+<h2 class="font-headline-lg text-on-surface leading-tight">
+          A Legacy Crafted in Silence, Elegance, and Devotion
+        </h2>
+<p class="font-body-md text-on-surface-variant">
+          Founded on the philosophy that true luxury is deeply personal, Glamour Centre Spa was established to provide an uncompromising escape from the cadence of modern life. Every element of our architecture, formulation, and technique is curated to honor ancient restorative traditions while delivering state-of-the-art sensory renewal.
+        </p>
+<p class="font-body-md text-on-surface-variant">
+          Our master therapists undergo rigorous multi-year apprenticeships, mastering intuitive touch and precision aesthetics to tailor each treatment specifically to your biological rhythm and emotional state.
+        </p>
+<div class="grid grid-cols-2 gap-space-md pt-space-md">
+<div class="bg-surface-container-low p-space-md rounded-xl">
+<span class="font-headline-lg text-primary block mb-1">15+</span>
+<span class="font-body-sm text-on-surface-variant">Years of Master Craftsmanship</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl">
+<span class="font-headline-lg text-primary block mb-1">100%</span>
+<span class="font-body-sm text-on-surface-variant">Organic Botanical Extracts</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 relative">
+<div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-[550px] object-cover" data-alt="A serene and luxurious spa treatment room featuring dark wood tones, minimalist stone accents, soft ambient lighting, and neatly folded plush organic cotton towels." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMiekNIPx2Gsfc7TdKzKeRUEqFOxSyXlS1h4JENhuune1G1J4Y9CYayOE7jyRPhdlSCsDrDhqFN-0HKAIa-F9EN1ofnwjAcMrF1OAjJg8apBuTZIMAr_EpkBlbBspmtk99Tp_ES1MpgrvPSdi2LTc1UFqzbv0KXYBCfo97x7R3y-AqmdJfFRSqJ_5EMKa48ffxNIbblKwpPLW6VtKumqGjFe4Q-RSoY_yZhTGLIjuKBKsocV9F4LK4N3zH0-uX221dE0bAbg0GA02a"/>
+</div>
+<div class="absolute -bottom-10 -left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl -z-0"></div>
+</div>
+</div>
+</section>
+<!-- MASTER PRACTITIONERS -->
+<section class="w-full py-space-xl px-gutter bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-sm mb-space-xs">
+<span class="h-[1px] w-12 bg-primary"></span>
+<span class="font-label-md text-primary uppercase tracking-widest">Leadership &amp; Mastery</span>
+</div>
+<h2 class="font-headline-lg text-on-surface">The Master Practitioners</h2>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-md">
+          Guided by decades of international expertise, our principals bring uncompromising standards to every ritual.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Practitioner 1 -->
+<div class="bg-surface-container p-space-lg rounded-2xl flex flex-col gap-space-md group transition-all duration-300 hover:bg-surface-container-high">
+<div class="overflow-hidden rounded-xl h-80">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of an elegant female master spa practitioner with a serene expression, dressed in professional minimalist spa attire against a moody, sophisticated studio background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw8CrLrNHfvzOP5TyHieGqheB3rCxA5KU8KBdz4HqI_RcEvQJuvXGSOvKdX43n1eeQ83JUKNpYye70KfBpFAkpn2thAXki_bFyrrTkN0SQa7mYbAyjXZVUaZ7SBfDmpK4KbxxfMkbzKhHe1NCb0nPyPc-qKJhtNzLaHXBahxcVXK8b1fiqtW9pQu8w4qZh1HElnx34snPCPT6xW1hQIsiuXH9LcUv58YJxj7zhlJzQx79RRkmO2hkd-dD14Em7wwabH9y6nauTaUc8"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-primary uppercase tracking-widest">Founder &amp; Creative Director</span>
+<h3 class="font-headline-md text-on-surface">Helena Vance</h3>
+<p class="font-body-md text-on-surface-variant">
+              With over 20 years pioneering holistic wellness across Zurich and Kyoto, Helena infuses rare botanical pharmacopeia with cutting-edge dermatological science.
+            </p>
+</div>
+</div>
+<!-- Practitioner 2 -->
+<div class="bg-surface-container p-space-lg rounded-2xl flex flex-col gap-space-md group transition-all duration-300 hover:bg-surface-container-high">
+<div class="overflow-hidden rounded-xl h-80">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Portrait of a senior wellness director with an authoritative yet compassionate look, wearing a sleek tailored blazer in a dimly lit, luxurious design studio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfL2IqHGjnMeLyLgCT33jqtf5tmh8hougSjBZ99F1aBSgqo_TQSMvwYyDOOkNTIkmEKCXO6A-dpgOtDnLrVQlycOt9WaI1BrCf4Lonq-Y5G6jgwZpvADi_VTXdoX0NR0iiRs6jMbrt4ie7Ef-62jmgJTfKBz6qI00Jht3YMtewfe8CLO2ejtz8otgWexN1AQewwEe5xOS61KwwB3Qy65IKDEGv7wZO8SkRl3jh2Psc-Vj8Fd4etOisg6jcDGqVUlDSFWtN_fpRXdF5"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-primary uppercase tracking-widest">Master Aesthetics Principal</span>
+<h3 class="font-headline-md text-on-surface">Dr. Julian Thorne</h3>
+<p class="font-body-md text-on-surface-variant">
+              Specializing in cellular regeneration and deep myofascial release, Dr. Thorne integrates physiological precision with deeply meditative restoration therapies.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- THE SPACE & ENVIRONMENT -->
+<section class="w-full py-space-xl px-gutter bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<div class="text-center max-w-2xl mx-auto flex flex-col gap-space-sm">
+<div class="flex items-center justify-center gap-space-sm">
+<span class="h-[1px] w-12 bg-primary"></span>
+<span class="font-label-md text-primary uppercase tracking-widest">Architecture of Calm</span>
+<span class="h-[1px] w-12 bg-primary"></span>
+</div>
+<h2 class="font-headline-lg text-on-surface">The Space &amp; Environment</h2>
+<p class="font-body-md text-on-surface-variant">
+          Designed with raw limestone, dark charred timber, and gentle acoustic dampening to quiet the senses the moment you cross our threshold.
+        </p>
+</div>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<div class="md:col-span-8 rounded-2xl overflow-hidden h-[400px] relative group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An expansive architectural lounge area of a luxury spa featuring minimalist slate flooring, low ambient designer lighting, and comfortable linen-upholstered seating." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB49Pr9851O0S_sL7b6f-qgqvivH-29CYPNRpppf1-ZI_NGA7cdkSTsGjlPQSj9MpCvf1EYUzh5ewYP9nv6bF6pLi5nYBVo2UUt9NAeKrAxBB4Ucj5G9fTx_-kJ1jj0cRHarNzqfiN_-YHV_R3vk6tNOcoTOG_MIZdIUz2iDRXJAj1OONuit03ZX87z_lE8-iO51dXX4QB5LpAvOG4RjDCoNOcxO4yoaapKPHbqqkjCZtqx8vcDXfqaXtRrI3XJRoE3IXG6b1hu9HpZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent flex items-end p-space-lg">
+<div>
+<span class="font-label-sm text-primary uppercase tracking-widest">Sanctuary Lounge</span>
+<h3 class="font-headline-md text-on-surface">The Silence Pavilion</h3>
+</div>
+</div>
+</div>
+<div class="md:col-span-4 rounded-2xl overflow-hidden h-[400px] relative group">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close-up of minimalist spa interior details featuring warm indirect wall lighting, smooth natural river stones, and delicate incense smoke." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl-zHvmLvk3ktF7O9mkFNN2UuJXpyj1uQbrwjMdoQ1uWnEHTw4-Wexm9Qc4f0Wi86DFbckfhfMuTPiDGnZ60mSkdUbD-9ham-5RFEoxtRb3RhUbivVUyLgKKotmvfd93uMXV9XeZ4-XC55DwK2Z5zf8aEb8P23Gg5GRb047B8u-xMIw-LR0wya7hrDwk0mOPcRMA-xmjYJx_ziqoBajbmzQgRwtoMzowl0O7ES2A-8YTJrLgK6ByIQqxVtqSkMGvIoq1Bw32mvBfAG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/90 via-transparent to-transparent flex items-end p-space-lg">
+<div>
+<span class="font-label-sm text-primary uppercase tracking-widest">Aromatics Bar</span>
+<h3 class="font-headline-md text-on-surface">Botanical Alchemy</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CERTIFICATIONS & QUALITY COMMITMENTS -->
+<section class="w-full py-space-xl px-gutter bg-surface-container-low">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg items-center text-center">
+<div class="flex items-center gap-space-sm">
+<span class="h-[1px] w-12 bg-primary"></span>
+<span class="font-label-md text-primary uppercase tracking-widest">Uncompromising Standards</span>
+<span class="h-[1px] w-12 bg-primary"></span>
+</div>
+<h2 class="font-headline-lg text-on-surface max-w-xl">
+        Certifications &amp; Quality Commitments
+      </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md w-full pt-space-md">
+<div class="bg-surface-container p-space-lg rounded-2xl flex flex-col items-center gap-space-md">
+<span class="material-symbols-outlined text-[40px] text-primary">eco</span>
+<h3 class="font-headline-sm text-on-surface">100% Organic Certified</h3>
+<p class="font-body-sm text-on-surface-variant">
+            Every botanical ingredient is sourced from biodynamic certified growers committed to sustainable extraction.
+          </p>
+</div>
+<div class="bg-surface-container p-space-lg rounded-2xl flex flex-col items-center gap-space-md">
+<span class="material-symbols-outlined text-[40px] text-primary">workspace_premium</span>
+<h3 class="font-headline-sm text-on-surface">Global Spa Association Gold</h3>
+<p class="font-body-sm text-on-surface-variant">
+            Awarded highest tier compliance for hygiene, operational excellence, and holistic therapeutic standards.
+          </p>
+</div>
+<div class="bg-surface-container p-space-lg rounded-2xl flex flex-col items-center gap-space-md">
+<span class="material-symbols-outlined text-[40px] text-primary">cruelty_free</span>
+<h3 class="font-headline-sm text-on-surface">Ethical &amp; Cruelty Free</h3>
+<p class="font-body-sm text-on-surface-variant">
+            Strict adherence to ethical sourcing protocols with zero animal testing across all formulations and tools.
+          </p>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row justify-between items-center text-on-surface-variant font-body-sm"><p>© Glamour Centre Spa. All rights reserved.</p><div class="flex gap-space-md mt-space-sm md:mt-0"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="services.html">Terms of Service</a></div></div></footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector("form") || document.getElementById("booking-form") || document.getElementById("inquiry-form");
+  if (!form) return;
+  
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const serviceInput = form.querySelector('[name*="service"], [name*="offering"], select') || {value: "Standard Inquiry"};
+    const dateInput = form.querySelector('input[type="date"]') || {value: "Flexible"};
+    const timeInput = form.querySelector('input[type="radio"]:checked, input[type="time"], [name*="time"]') || {value: "Flexible"};
+    const nameInput = form.querySelector('input[type="text"], [name*="name"]') || {value: "Valued Client"};
+    const partyInput = form.querySelector('[name*="guest"], [name*="party"]') || {value: "1"};
+    const notesInput = form.querySelector('textarea, [name*="notes"]') || {value: "None"};
+
+    const msg = "*New Inquiry / Booking Request*\n" +
+                "• *Business:* Glamour Centre Spa (Spa)\n" +
+                "• *Selected Item:* " + (serviceInput.value || "Bespoke Request") + "\n" +
+                "• *Date & Time:* " + dateInput.value + " at " + timeInput.value + "\n" +
+                "• *Party Size:* " + partyInput.value + "\n" +
+                "• *Client Name:* " + nameInput.value + "\n" +
+                "• *Special Notes:* " + notesInput.value;
+
+    const waUrl = "https://wa.me/21626283838?text=" + encodeURIComponent(msg);
+    window.open(waUrl, "_blank");
+  });
+});
+</script>
+
+</body></html>

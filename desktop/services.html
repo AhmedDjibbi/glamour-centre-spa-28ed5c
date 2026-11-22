@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior-y:auto;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script>
+(function(){
+  var origWarn = console.warn;
+  console.warn = function(){
+    if (arguments[0] && typeof arguments[0] === 'string' && arguments[0].indexOf('cdn.tailwindcss.com') !== -1) return;
+    origWarn.apply(console, arguments);
+  };
+})();
+</script>
+<script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container": "#20201c",
+          "surface-tint": "#d7c3b6",
+          "on-surface-variant": "#d1c4bc",
+          "surface-container-high": "#2a2a26",
+          "on-tertiary": "#2f312e",
+          "secondary-fixed": "#e6e2d8",
+          "on-secondary-fixed": "#1d1c16",
+          "on-tertiary-container": "#edede8",
+          "on-primary": "#3a2e25",
+          "inverse-surface": "#e5e2db",
+          "on-tertiary-fixed-variant": "#464744",
+          "on-error-container": "#ffdad6",
+          "tertiary-container": "#6a6b67",
+          "on-primary-fixed-variant": "#52443a",
+          "error": "#ffb4ab",
+          "outline-variant": "#4e453f",
+          "on-secondary": "#32302a",
+          "tertiary": "#c6c7c2",
+          "error-container": "#93000a",
+          "secondary-fixed-dim": "#cac6bd",
+          "on-secondary-fixed-variant": "#484740",
+          "surface-bright": "#3a3935",
+          "on-secondary-container": "#bcb8af",
+          "secondary": "#cac6bd",
+          "on-tertiary-fixed": "#1a1c19",
+          "primary-fixed-dim": "#d7c3b6",
+          "surface-container-lowest": "#0e0e0b",
+          "inverse-on-surface": "#31312c",
+          "tertiary-fixed-dim": "#c6c7c2",
+          "on-primary-fixed": "#241911",
+          "on-primary-container": "#ffe9db",
+          "outline": "#9a8f88",
+          "surface-container-low": "#1c1c18",
+          "surface-container-highest": "#353530",
+          "background": "#141410",
+          "secondary-container": "#4b4942",
+          "primary": "#d7c3b6",
+          "inverse-primary": "#6b5b51",
+          "on-error": "#690005",
+          "surface": "#141410",
+          "on-background": "#e5e2db",
+          "tertiary-fixed": "#e3e3de",
+          "on-surface": "#e5e2db",
+          "primary-container": "#78685d",
+          "primary-fixed": "#f4ded1",
+          "surface-variant": "#353530",
+          "surface-dim": "#141410"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-xl": "6rem",
+          "space-xs": "0.375rem",
+          "gutter": "2rem",
+          "space-sm": "0.75rem",
+          "space-md": "1.5rem",
+          "margin": "3rem",
+          "space-lg": "3rem"
+        },
+        "fontFamily": {
+          "label-md": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Shippori Mincho"
+          ],
+          "headline-md": [
+            "Shippori Mincho"
+          ],
+          "headline-sm": [
+            "Shippori Mincho"
+          ],
+          "headline-lg": [
+            "Shippori Mincho"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "1.4",
+              "letterSpacing": "0.08em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "1.5",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "1.4",
+              "letterSpacing": "0.1em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-xl": [
+            "48px",
+            {
+              "lineHeight": "1.2",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "1.3",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "1.4",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "1.25",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "1.6",
+              "fontWeight": "300"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "1.6",
+              "fontWeight": "300"
+            }
+          ]
+        }
+      },
+    },
+  }
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script>
+(function() {
+  function checkViewport() {
+    if (window.innerWidth < 768) {
+      var currentFile = window.location.pathname.split('/').pop() || 'index.html';
+      window.location.replace('../mobile/' + currentFile + window.location.search + window.location.hash);
+    }
+  }
+  checkViewport();
+  window.addEventListener('resize', checkViewport);
+})();
+</script>
+</head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-md"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-12"><span class="font-headline-md tracking-wider text-primary">GLAMOUR CENTRE</span><nav class="hidden md:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container rounded-lg"><a class="font-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="home" href="index.html">Home</a><a class="font-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="treatments" href="#">Treatments</a><a class="font-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="about" href="about.html">About</a><a class="font-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="contact" href="contact.html">Contact</a></nav></div><div class="flex items-center gap-space-md"><a class="hidden lg:flex items-center gap-space-xs font-body-sm text-secondary hover:text-on-surface transition-colors" href="tel:26283838"><span class="material-symbols-outlined text-[18px]">call</span>26 283 838</a><a class="bg-primary text-on-primary font-label-md px-space-md py-space-sm rounded-lg hover:bg-primary-fixed transition-colors flex items-center gap-space-xs" href="#">Book on WhatsApp</a></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full bg-surface text-on-surface">
+<!-- Hero Section -->
+<section class="relative w-full h-[870px] min-h-[600px] flex items-start justify-center overflow-hidden -mt-20">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center mix-blend-luminosity opacity-40 scale-105 transition-transform duration-1000" data-alt="A luxurious, tranquil spa interior with warm ambient lighting, polished stone floors, soft white drapery, and lush indoor greenery creating a serene sanctuary atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7zhcPkckd6g0kscmmx5eZgCwxEc-mF49jd6aSUgn_s5sLJaTZSf39Fo-EWN8VD-LYAMc-jox2ziJma28g9-FURVa4JXboW5JPh1b2b-qesr7ATRhsCjk9ntGOYvXfTN2ohE7esxoc2NQxm4bEsehxd3tuqf3n0BfST5QWlrr01N8mZ3GO1FLtQt3YhH-OE7xSQF8wAcmFfWdHlHjVD5RkWtVQFFnmLgf-K2TdespjZnQDbVuvWwTsq99aNVOkxQwavjZSONxa5Or6')"></div>
+    <!-- ENFORCED SUBTLE BOTTOM FADE -->
+    <div class="absolute bottom-0 inset-x-0 h-28 md:h-44 pointer-events-none z-20" style="background: linear-gradient(to top, #171713 0%, rgba(11,15,25,0.7) 40%, transparent 100%);"></div>
+    
+<div class="absolute inset-0 bg-gradient-to-b from-surface/30 via-surface/80 to-surface"></div>
+<div class="relative z-10 max-w-5xl mx-auto px-gutter text-center flex flex-col items-center pt-20">
+<div class="inline-flex items-center gap-space-xs bg-primary-container/40 text-on-primary-container px-space-md py-space-xs rounded-full mb-space-md backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">workspace_premium</span>
+<span class="font-label-md uppercase tracking-widest">Award of Excellence 2026</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-space-md max-w-4xl tracking-tight">
+        Bespoke Treatments &amp; Rituals
+      </h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mb-space-lg font-light leading-relaxed">
+        Immerse yourself in deeply restorative sanctuaries designed to harmonize body, mind, and spirit through ancient holistic traditions and modern botanical science.
+      </p>
+<div class="flex items-center gap-space-md">
+<a class="bg-primary text-on-primary font-label-md px-space-xl py-space-sm rounded-lg hover:bg-primary-fixed transition-colors flex items-center gap-space-xs shadow-lg" href="#treatments-grid">
+          Explore Rituals
+          <span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Category Filter Navigation Tabs -->
+<section class="sticky top-20 z-40 bg-surface/90 backdrop-blur-md py-space-md border-b border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-gutter overflow-x-auto">
+<div class="flex items-center justify-center gap-space-sm min-w-max mx-auto" id="filter-tabs">
+<button class="filter-btn active font-label-md px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary-container transition-all" onclick="filterTreatments('all')">All Rituals</button>
+<button class="filter-btn font-label-md px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" onclick="filterTreatments('hair')">Signature Hair</button>
+<button class="filter-btn font-label-md px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" onclick="filterTreatments('facials')">Botanical Facials</button>
+<button class="filter-btn font-label-md px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" onclick="filterTreatments('hammam')">Hammam &amp; Body</button>
+<button class="filter-btn font-label-md px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-all" onclick="filterTreatments('packages')">Exclusive Packages</button>
+</div>
+</div>
+</section>
+<!-- Exhaustive Treatments & Rituals Grid -->
+<section class="max-w-7xl mx-auto px-gutter py-space-xl w-full" id="treatments-grid">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Card 1: Hair -->
+<div class="treatment-card group flex flex-col justify-between bg-surface-container rounded-xl p-space-lg hover:bg-surface-container-high transition-all duration-500 relative overflow-hidden shadow-md" data-category="hair">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all"></div>
+<div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="font-label-sm uppercase tracking-widest text-primary bg-primary-container/30 px-space-sm py-space-xs rounded">Signature Offerings</span>
+<span class="font-headline-sm text-primary">Inquire</span>
+</div>
+<h3 class="font-headline-lg text-on-surface mb-space-sm">Premium Hair Salon Service</h3>
+<p class="font-body-md text-on-surface-variant mb-space-md font-light">Comprehensive hair salon solution customized to your individual hair needs and styling preferences, utilizing organic botanical treatments and master styling artisans.</p>
+<div class="space-y-space-xs mb-space-lg">
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Individual consultation &amp; hair mapping</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Custom organic oil infusion</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Standard Session / Flexible Duration</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-md text-secondary">Tailored Experience</span>
+<a class="bg-primary text-on-primary font-label-md px-space-md py-space-sm rounded-lg hover:bg-primary-fixed transition-colors flex items-center gap-space-xs" href="#">
+<span>Book via WhatsApp</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Facials -->
+<div class="treatment-card group flex flex-col justify-between bg-surface-container rounded-xl p-space-lg hover:bg-surface-container-high transition-all duration-500 relative overflow-hidden shadow-md" data-category="facials">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all"></div>
+<div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="font-label-sm uppercase tracking-widest text-primary bg-primary-container/30 px-space-sm py-space-xs rounded">Signature Rituals</span>
+<span class="font-headline-lg text-primary">$180</span>
+</div>
+<h3 class="font-headline-lg text-on-surface mb-space-sm">Botanical Facial Rejuvenation</h3>
+<p class="font-body-md text-on-surface-variant mb-space-md font-light">Deep cellular restoration using organic botanical serums, customized peptide masks, and advanced lymphatic drainage massage techniques for luminous skin.</p>
+<div class="space-y-space-xs mb-space-lg">
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Gentle enzyme exfoliation</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Lymphatic facial contouring</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>75 mins protocol</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-md text-secondary">Cellular Restoration</span>
+<a class="bg-primary text-on-primary font-label-md px-space-md py-space-sm rounded-lg hover:bg-primary-fixed transition-colors flex items-center gap-space-xs" href="#">
+<span>Book via WhatsApp</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Hammam -->
+<div class="treatment-card group flex flex-col justify-between bg-surface-container rounded-xl p-space-lg hover:bg-surface-container-high transition-all duration-500 relative overflow-hidden shadow-md" data-category="hammam">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all"></div>
+<div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="font-label-sm uppercase tracking-widest text-primary bg-primary-container/30 px-space-sm py-space-xs rounded">Holistic Care</span>
+<span class="font-headline-lg text-primary">$220</span>
+</div>
+<h3 class="font-headline-lg text-on-surface mb-space-sm">Royal Argan Oil &amp; Clay Hammam</h3>
+<p class="font-body-md text-on-surface-variant mb-space-md font-light">Authentic Moroccan purification ritual featuring black soap steam, Kessa glove exfoliation, and pure organic argan oil application with mineral-rich rhassoul clay.</p>
+<div class="space-y-space-xs mb-space-lg">
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Traditional steam &amp; black soap</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Rhassoul mineral clay wrap</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>90 mins immersive care</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-md text-secondary">Ancient Purification</span>
+<a class="bg-primary text-on-primary font-label-md px-space-md py-space-sm rounded-lg hover:bg-primary-fixed transition-colors flex items-center gap-space-xs" href="#">
+<span>Book via WhatsApp</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 4: Packages -->
+<div class="treatment-card group flex flex-col justify-between bg-surface-container rounded-xl p-space-lg hover:bg-surface-container-high transition-all duration-500 relative overflow-hidden shadow-md" data-category="packages">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all"></div>
+<div>
+<div class="flex justify-between items-start mb-space-md">
+<span class="font-label-sm uppercase tracking-widest text-primary bg-primary-container/30 px-space-sm py-space-xs rounded">Exclusive Packages</span>
+<span class="font-headline-lg text-primary">Custom</span>
+</div>
+<h3 class="font-headline-lg text-on-surface mb-space-sm">Full Access &amp; Consultation</h3>
+<p class="font-body-md text-on-surface-variant mb-space-md font-light">Personalized assessment and dedicated guidance from our experienced team of wellness experts to curate a multi-day restorative itinerary.</p>
+<div class="space-y-space-xs mb-space-lg">
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Comprehensive wellness diagnostic</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Private suite &amp; spa facilities access</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Inquire for custom itinerary</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label-md text-secondary">VIP Concierge Care</span>
+<a class="bg-primary text-on-primary font-label-md px-space-md py-space-sm rounded-lg hover:bg-primary-fixed transition-colors flex items-center gap-space-xs" href="#">
+<span>Book via WhatsApp</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Bespoke VIP Custom Consultation Module -->
+<section class="max-w-7xl mx-auto px-gutter py-space-xl w-full">
+<div class="relative bg-surface-container-low rounded-2xl p-space-xl overflow-hidden shadow-2xl flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center opacity-10 mix-blend-overlay pointer-events-none" data-alt="An opulent VIP spa consultation lounge featuring dark wood accents, velvet seating, and warm sculptural lighting fixtures." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDanromik8WHNUHNoFCF0nAsvBBhiNySdObvnxm9iwXuSYZgjiavviYuHYK_g_XFteck9yH2KVG6fErhodKQq3VMSqTuOFSr0r8iKxsLautOF8w7-uLt_5jFxbyyBLLLephHjmojOZtPdxPGZfICJwLY9wmYhIDW7zHFwqmKQR85TH-BXx-UikBAIdvTvUX2MZFnd9pRftohtvrPNHp4Cjld3wh6rfegMRigmlfA4vtum23jiz5RMlMLr0EaoacJkfHvTcB_ak4bw37')"></div>
+<div class="relative z-10 max-w-xl">
+<span class="font-label-sm uppercase tracking-widest text-primary mb-space-xs block">Tailored Wellness</span>
+<h2 class="font-headline-lg text-on-surface mb-space-sm">Request a Bespoke Consultation</h2>
+<p class="font-body-md text-on-surface-variant font-light">Allow our master practitioners to curate an unhurried, highly personalized ritual sequence tailored specifically to your present state of wellbeing.</p>
+</div>
+<div class="relative z-10 w-full md:w-auto flex flex-col sm:flex-row gap-space-sm">
+<input class="bg-surface-container px-space-md py-space-sm rounded-lg text-on-surface placeholder:text-outline focus:outline-none focus:ring-1 focus:ring-primary w-full md:w-72 font-body-sm" placeholder="Enter your email" type="email"/>
+<button class="bg-primary text-on-primary font-label-md px-space-lg py-space-sm rounded-lg hover:bg-primary-fixed transition-colors whitespace-nowrap" onclick="alert('Consultation request submitted successfully. Our concierge will contact you shortly.')">
+          Inquire Now
+        </button>
+</div>
+</div>
+</section>
+<!-- Direct Concierge Hotline Banner -->
+<section class="w-full bg-surface-container py-space-lg mb-space-xl">
+<div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-left">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">support_agent</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-on-surface">Direct Concierge Assistance</h4>
+<p class="font-body-sm text-on-surface-variant font-light">Available daily from 9:00 AM to 8:00 PM for instant booking &amp; bespoke arrangements.</p>
+</div>
+</div>
+<a class="font-headline-md text-primary hover:text-primary-fixed transition-colors flex items-center gap-space-xs" href="tel:26283838">
+<span class="material-symbols-outlined text-[20px]">call</span>
+        26 283 838
+      </a>
+</div>
+</section>
+<!-- Client-side script for tab filtering -->
+<script>
+    function filterTreatments(category) {
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      event.currentTarget.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      event.currentTarget.classList.add('bg-primary-container', 'text-on-primary-container');
+
+      const cards = document.querySelectorAll('.treatment-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row justify-between items-center text-on-surface-variant font-body-sm"><p>© Glamour Centre Spa. All rights reserved.</p><div class="flex gap-space-md mt-space-sm md:mt-0"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="services.html">Terms of Service</a></div></div></footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector("form") || document.getElementById("booking-form") || document.getElementById("inquiry-form");
+  if (!form) return;
+  
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const serviceInput = form.querySelector('[name*="service"], [name*="offering"], select') || {value: "Standard Inquiry"};
+    const dateInput = form.querySelector('input[type="date"]') || {value: "Flexible"};
+    const timeInput = form.querySelector('input[type="radio"]:checked, input[type="time"], [name*="time"]') || {value: "Flexible"};
+    const nameInput = form.querySelector('input[type="text"], [name*="name"]') || {value: "Valued Client"};
+    const partyInput = form.querySelector('[name*="guest"], [name*="party"]') || {value: "1"};
+    const notesInput = form.querySelector('textarea, [name*="notes"]') || {value: "None"};
+
+    const msg = "*New Inquiry / Booking Request*\n" +
+                "• *Business:* Glamour Centre Spa (Spa)\n" +
+                "• *Selected Item:* " + (serviceInput.value || "Bespoke Request") + "\n" +
+                "• *Date & Time:* " + dateInput.value + " at " + timeInput.value + "\n" +
+                "• *Party Size:* " + partyInput.value + "\n" +
+                "• *Client Name:* " + nameInput.value + "\n" +
+                "• *Special Notes:* " + notesInput.value;
+
+    const waUrl = "https://wa.me/21626283838?text=" + encodeURIComponent(msg);
+    window.open(waUrl, "_blank");
+  });
+});
+</script>
+
+</body></html>

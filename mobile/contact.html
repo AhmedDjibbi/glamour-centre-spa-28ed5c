@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html{width:100%;max-width:100vw;overflow-x:hidden;margin:0;padding:0;}body{width:100%;max-width:100vw;margin:0;padding:0;overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior-y:auto;}body{overscroll-behavior-y:auto;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script>
+(function(){
+  var origWarn = console.warn;
+  console.warn = function(){
+    if (arguments[0] && typeof arguments[0] === 'string' && arguments[0].indexOf('cdn.tailwindcss.com') !== -1) return;
+    origWarn.apply(console, arguments);
+  };
+})();
+</script>
+<script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {darkMode: "class",theme: {extend: {"colors": {"on-tertiary-fixed-variant": "#464744", "secondary-fixed-dim": "#cac6bd", "on-error": "#690005", "tertiary-fixed": "#e3e3de", "primary": "#d7c3b6", "on-error-container": "#ffdad6", "on-surface-variant": "#d1c4bc", "on-secondary-fixed": "#1d1c16", "inverse-on-surface": "#31312c", "surface-container-highest": "#353530", "surface-variant": "#353530", "secondary-container": "#4b4942", "on-tertiary-container": "#edede8", "on-primary-container": "#ffe9db", "on-primary": "#3a2e25", "error": "#ffb4ab", "on-background": "#e5e2db", "on-secondary": "#32302a", "outline": "#9a8f88", "tertiary-container": "#6a6b67", "secondary-fixed": "#e6e2d8", "surface-container-high": "#2a2a26", "surface-container-low": "#1c1c18", "surface-tint": "#d7c3b6", "on-secondary-container": "#bcb8af", "inverse-surface": "#e5e2db", "inverse-primary": "#6b5b51", "on-primary-fixed-variant": "#52443a", "primary-fixed-dim": "#d7c3b6", "primary-fixed": "#f4ded1", "on-surface": "#e5e2db", "background": "#141410", "surface": "#141410", "surface-container-lowest": "#0e0e0b", "surface-dim": "#141410", "surface-bright": "#3a3935", "secondary": "#cac6bd", "tertiary-fixed-dim": "#c6c7c2", "on-tertiary": "#2f312e", "on-primary-fixed": "#241911", "on-tertiary-fixed": "#1a1c19", "surface-container": "#20201c", "on-secondary-fixed-variant": "#484740", "error-container": "#93000a", "primary-container": "#78685d", "tertiary": "#c6c7c2", "outline-variant": "#4e453f"},"borderRadius": {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},"spacing": {"space-md": "1.5rem", "space-xl": "6rem", "space-xs": "0.375rem", "gutter": "2rem", "space-lg": "3rem", "space-sm": "0.75rem", "margin": "3rem"},"fontFamily": {"body-lg": ["Inter"], "headline-md": ["Shippori Mincho"], "label-sm": ["Inter"], "headline-sm": ["Shippori Mincho"], "label-md": ["Inter"], "headline-lg": ["Shippori Mincho"], "body-md": ["Inter"], "body-sm": ["Inter"], "headline-xl": ["Shippori Mincho"]},"fontSize": {"body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "300"}], "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "400"}], "label-sm": ["10px", {"lineHeight": "1.4", "letterSpacing": "0.1em", "fontWeight": "500"}], "headline-sm": ["20px", {"lineHeight": "1.4", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "1.4", "letterSpacing": "0.08em", "fontWeight": "500"}], "headline-lg": ["36px", {"lineHeight": "1.25", "letterSpacing": "-0.01em", "fontWeight": "500"}], "body-md": ["15px", {"lineHeight": "1.6", "fontWeight": "300"}], "body-sm": ["13px", {"lineHeight": "1.5", "fontWeight": "400"}], "headline-xl": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "500"}]}}}};</script><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Shippori+Mincho:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  <script>
+(function() {
+  function checkViewport() {
+    if (window.innerWidth >= 768 && !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+      var currentFile = window.location.pathname.split('/').pop() || 'index.html';
+      window.location.replace('../desktop/' + currentFile + window.location.search + window.location.hash);
+    }
+  }
+  checkViewport();
+  window.addEventListener('resize', checkViewport);
+})();
+</script>
+</head><body class="bg-surface text-on-surface font-body-md flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-space-md flex items-center justify-between"><button aria-label="Menu" class="w-12 h-12 flex items-center justify-center text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-[24px]">menu</span></button><div class="flex flex-col items-center"><span class="font-headline-sm tracking-widest text-on-surface uppercase">Glamour</span><span class="font-label-sm tracking-widest text-outline uppercase -mt-1">Centre Spa</span></div><div class="flex items-center gap-space-sm"><a aria-label="WhatsApp Booking" class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container hover:opacity-90 transition-opacity" href="#"><span class="material-symbols-outlined text-[20px]">chat</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full px-space-md pt-16 pb-24 bg-surface flex-grow"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<div class="relative w-full min-h-[500px] flex flex-col justify-start p-space-md bg-cover bg-center overflow-hidden" data-alt="A luxurious high-end spa reception with warm ambient lighting, marble surfaces, minimalist floral arrangements, and plush velvet seating in deep taupe and charcoal tones." >
+  <div class="absolute inset-0 w-full h-full bg-cover bg-center z-0 scale-105 transition-transform duration-1000" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBq0kgwVmgIx_K-vX9B5TevUZa6ijx_SjZTCCNMwHPBgNSulcqgUUcS2bBezx6VtGo9d7LmWa2LUNxDvgsW1IFYWKqO-yBH93aCfxKWmbwU2paTd3OgyNIdQNLgFzaG6gMaik_Npd_oC2dvKINekz52kq9SvNki4PjSpQuQz4TniooeJQ1MeEVs9zvVc_7jALcTrlWNQ5BJhZDlwUmIVEBWSmeATK_3xPU3wQ4Eiv0qmOahrayCQ-bpbLBTn2wrqPkzmuDbjsHW9-rE');"></div>
+    <!-- ENFORCED SUBTLE BOTTOM FADE -->
+    <div class="absolute bottom-0 inset-x-0 h-28 md:h-44 pointer-events-none z-20" style="background: linear-gradient(to top, #171713 0%, rgba(11,15,25,0.7) 40%, transparent 100%);"></div>
+    
+<!-- Gradient Scrim Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+<!-- Hero Content -->
+<div class="relative z-10 flex flex-col gap-space-sm pb-space-md">
+<!-- Accolade Pill -->
+<div class="self-start inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-high/80 backdrop-blur-md text-primary font-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[14px]">military_tech</span>
+        Award of Excellence 2026
+      </div>
+<!-- Headline -->
+<div class="flex flex-col">
+<h1 class="font-headline-lg text-on-surface">Glamour Centre Spa <span class="block text-primary font-light italic text-headline-md">— Contact &amp; Inquiries</span></h1>
+<p class="font-body-sm text-outline mt-1 italic">Premier Hair salon &amp; Sanctuary Experience</p>
+</div>
+<!-- Subheadline -->
+<p class="font-body-md text-on-surface-variant max-w-sm">
+        Immerse yourself in bespoke luxury. Connect with our concierge or schedule your private consultation.
+      </p>
+<!-- Primary Action CTA Buttons -->
+<div class="flex flex-col sm:flex-row gap-space-sm mt-space-sm">
+<a class="w-full py-3 px-space-md bg-inverse-surface text-surface font-label-md uppercase tracking-wider rounded text-center hover:bg-primary transition-colors flex items-center justify-center gap-space-xs" href="#appointment-form">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+          Schedule Consultation
+        </a>
+<a class="w-full py-3 px-space-md bg-surface-container-high text-on-surface font-label-md uppercase tracking-wider rounded text-center hover:bg-surface-container-highest transition-colors flex items-center justify-center gap-space-xs" href="tel:26283838">
+<span class="material-symbols-outlined text-[18px]">call</span>
+          Direct Line
+        </a>
+</div>
+</div>
+</div>
+<!-- FREESTYLE SECTIONS BELOW HERO -->
+<div class="flex flex-col gap-space-lg px-space-md py-space-xl bg-surface">
+<!-- 1. Interactive Online Appointment / Inquiry System -->
+<section class="flex flex-col gap-space-md bg-surface-container-low p-space-md rounded-xl shadow-lg relative overflow-hidden" id="appointment-form">
+<div class="absolute -right-12 -top-12 w-40 h-40 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-primary uppercase tracking-widest">Reservation Concierge</span>
+<h2 class="font-headline-md text-on-surface">Private Appointment</h2>
+<p class="font-body-sm text-outline">Select your desired service and time for an exclusive visit.</p>
+</div>
+<form class="flex flex-col gap-space-md mt-space-xs" onsubmit="event.preventDefault(); alert('Redirecting to WhatsApp with your reservation details...');">
+<!-- Offering Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Select Treatment</label>
+<div class="relative">
+<select class="w-full bg-surface-container-high text-on-surface p-space-sm rounded border-0 appearance-none font-body-md focus:outline-none focus:ring-1 focus:ring-primary">
+<option>Hair Spa &amp; Styling</option>
+<option>Aromatherapy Massage</option>
+<option>Bridal Glow Package</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Date Picker -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Preferred Date</label>
+<input class="w-full bg-surface-container-high text-on-surface p-space-sm rounded border-0 font-body-md focus:outline-none focus:ring-1 focus:ring-primary" type="date"/>
+</div>
+<!-- Time Slot Selection Pills -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Available Time Slots</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="time-pill py-2 px-space-xs text-center rounded bg-surface-container-high text-on-surface font-label-md hover:bg-primary hover:text-on-primary transition-all" onclick="selectTime(this)" type="button">09:00 AM</button>
+<button class="time-pill py-2 px-space-xs text-center rounded bg-surface-container-high text-on-surface font-label-md hover:bg-primary hover:text-on-primary transition-all" onclick="selectTime(this)" type="button">11:30 AM</button>
+<button class="time-pill py-2 px-space-xs text-center rounded bg-surface-container-high text-on-surface font-label-md hover:bg-primary hover:text-on-primary transition-all" onclick="selectTime(this)" type="button">02:00 PM</button>
+<button class="time-pill py-2 px-space-xs text-center rounded bg-surface-container-high text-on-surface font-label-md hover:bg-primary hover:text-on-primary transition-all" onclick="selectTime(this)" type="button">04:30 PM</button>
+<button class="time-pill py-2 px-space-xs text-center rounded bg-surface-container-high text-on-surface font-label-md hover:bg-primary hover:text-on-primary transition-all" onclick="selectTime(this)" type="button">06:00 PM</button>
+</div>
+</div>
+<!-- Guests / Party Count -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Guests / Party Count</label>
+<div class="flex items-center justify-between bg-surface-container-high p-space-sm rounded">
+<span class="font-body-md text-on-surface">Number of Guests</span>
+<div class="flex items-center gap-space-md">
+<button class="w-8 h-8 rounded bg-surface-container text-on-surface flex items-center justify-center font-bold hover:bg-primary hover:text-on-primary transition-colors" type="button">-</button>
+<span class="font-body-md text-on-surface font-medium">1</span>
+<button class="w-8 h-8 rounded bg-surface-container text-on-surface flex items-center justify-center font-bold hover:bg-primary hover:text-on-primary transition-colors" type="button">+</button>
+</div>
+</div>
+</div>
+<!-- Full Name -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Full Name</label>
+<input class="w-full bg-surface-container-high text-on-surface placeholder:text-outline/50 p-space-sm rounded border-0 font-body-md focus:outline-none focus:ring-1 focus:ring-primary" placeholder="e.g. Sarah Jenkins" type="text"/>
+</div>
+<!-- Contact Phone (WhatsApp) -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Contact Phone (WhatsApp)</label>
+<input class="w-full bg-surface-container-high text-on-surface placeholder:text-outline/50 p-space-sm rounded border-0 font-body-md focus:outline-none focus:ring-1 focus:ring-primary" placeholder="+216 26 283 838" type="tel"/>
+</div>
+<!-- Special Requests -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Special Requests</label>
+<textarea class="w-full bg-surface-container-high text-on-surface placeholder:text-outline/50 p-space-sm rounded border-0 font-body-md focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Preferences, allergies, or tailored requests..." rows="3"></textarea>
+</div>
+<!-- CTA Button -->
+<button class="mt-space-sm w-full py-4 bg-primary text-on-primary font-label-md uppercase tracking-widest rounded flex items-center justify-center gap-space-xs shadow-md hover:opacity-95 transition-opacity" type="submit">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+          Book on WhatsApp
+        </button>
+</form>
+</section>
+<!-- 2. Operational Schedule Bento -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-primary uppercase tracking-widest">Sanctuary Hours</span>
+<h2 class="font-headline-md text-on-surface">Operational Schedule</h2>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Mon-Thu -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-medium">Monday – Thursday</span>
+<span class="font-label-sm text-outline uppercase tracking-wider">Standard Hours</span>
+</div>
+<span class="font-headline-sm text-primary">09:00 – 20:00</span>
+</div>
+<!-- Fri-Sat -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-medium">Friday – Saturday</span>
+<span class="font-label-sm text-primary uppercase tracking-wider">Extended Retreat</span>
+</div>
+<span class="font-headline-sm text-on-surface">08:30 – 21:00</span>
+</div>
+<!-- Sun -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-md text-on-surface font-medium">Sunday</span>
+<span class="font-label-sm text-outline uppercase tracking-wider">Private Sessions</span>
+</div>
+<span class="font-headline-sm text-primary">10:00 – 18:00</span>
+</div>
+</div>
+</section>
+<!-- 3. Direct Communication Channels -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-primary uppercase tracking-widest">Connect</span>
+<h2 class="font-headline-md text-on-surface">Direct Channels</h2>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Location -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-outline uppercase">Location</span>
+<span class="font-body-md text-on-surface mt-1">Rue 14 Janvier Sousse, Khzema, Sousse 4051 Tunisia</span>
+</div>
+</div>
+<!-- Telephone -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">phone</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-outline uppercase">Telephone</span>
+<a class="font-body-md text-on-surface mt-1 hover:text-primary transition-colors" href="tel:26283838">Direct line to concierge desk: 26 283 838</a>
+</div>
+</div>
+<!-- WhatsApp Concierge -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-outline uppercase">WhatsApp Concierge</span>
+<span class="font-body-md text-on-surface mt-1">Instant messaging for fast appointment booking &amp; inquiries.</span>
+</div>
+</div>
+<!-- Digital Presence -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">alternate_email</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-outline uppercase">Digital Presence</span>
+<span class="font-body-md text-on-surface mt-1">Inquiries: concierge@glamourcentre.tn</span>
+<span class="font-body-sm text-outline mt-0.5">Instagram &amp; Facebook: @GlamourCentreSpa</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Location Map Placeholder -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-primary uppercase tracking-widest">Find Us</span>
+<h2 class="font-headline-md text-on-surface">Sanctuary Map</h2>
+</div>
+<div class="flex flex-col rounded-xl overflow-hidden bg-surface-container-low shadow-lg">
+<div class="w-full h-64 bg-cover bg-center relative" data-location="Rue 14 Janvier Sousse, Khzema, Sousse 4051 Tunisia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuABtGzb4GGGzlAr0qAiwkZ8oIAGfWP77cu1uKrXKe5sEVYgzV6U-bKX55ioT0XGOXOSWJkLM9OVf-fUANrXP3nmil-eTe8bIQKk7_47minNMu-vg4Vd1Ie_R-YjOPHlmzGuwXblyMZIJbyBZ1Tz9QGu1IYZKIYgyLk2ddqbupyihXZRSSmtQ-zAY-T9mnpvWQXXH3sE7IJjfjmPTzsLycsJMMjpeDwv5yvdF9toW_7yORYx0ADNoSab5Ft71zzSRbMZADEgK61oPFPb')">
+<div class="absolute inset-0 bg-surface/20"></div>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-space-sm py-2 rounded flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">near_me</span>
+<span class="font-label-sm text-on-surface uppercase">Khzema, Sousse</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<p class="font-body-sm text-outline">Located in the prestigious district of Khzema, offering private parking and tranquil surroundings.</p>
+<a class="w-full py-3 bg-surface-container-high text-on-surface font-label-md uppercase tracking-wider rounded text-center hover:bg-primary hover:text-on-primary transition-colors flex items-center justify-center gap-space-xs" href="https://maps.google.com/?q=Rue+14+Janvier+Sousse+Khzema" target="_blank">
+<span class="material-symbols-outlined text-[18px]">directions</span>
+            Get Directions
+          </a>
+</div>
+</div>
+</section>
+<!-- 5. Unified Luxury Footer matching homepage -->
+<footer class="flex flex-col items-center text-center gap-space-md pt-space-xl pb-space-lg border-t border-outline/10 mt-space-lg">
+<div class="flex flex-col items-center gap-space-xs">
+<span class="font-headline-md tracking-widest text-on-surface uppercase">Glamour</span>
+<span class="font-label-sm tracking-widest text-outline uppercase -mt-1">Centre Spa &amp; Salon</span>
+</div>
+<p class="font-body-sm text-outline max-w-xs">
+        An uncompromising sanctuary of beauty, restoration, and personalized luxury in the heart of Sousse.
+      </p>
+<div class="flex items-center gap-space-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a>
+</div>
+<div class="flex flex-col gap-1 text-[11px] text-outline/60 mt-space-sm">
+<span>© 2026 Glamour Centre Spa. All Rights Reserved.</span>
+<span>Designed for ultimate serenity &amp; elegance.</span>
+</div>
+</footer>
+</div>
+</div>
+<script>
+  function selectTime(btn) {
+    document.querySelectorAll('.time-pill').forEach(p => {
+      p.classList.remove('bg-primary', 'text-on-primary');
+      p.classList.add('bg-surface-container-high', 'text-on-surface');
+    });
+    btn.classList.remove('bg-surface-container-high', 'text-on-surface');
+    btn.classList.add('bg-primary', 'text-on-primary');
+  }
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl" data-active-classes="text-primary"><div class="flex justify-around items-center h-20 px-space-sm"><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all" data-path="home" href="index.html"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-md">Home</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all" data-path="treatments" href="#"><span class="material-symbols-outlined text-[24px]">spa</span><span class="font-label-md">Treatments</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all" data-path="booking" href="#"><span class="material-symbols-outlined text-[24px]">calendar_month</span><span class="font-label-md">Book</span></a><a class="flex flex-col items-center justify-center gap-space-xs w-16 h-16 text-on-surface-variant hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-md">Profile</span></a></div></nav>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector("form") || document.getElementById("booking-form") || document.getElementById("inquiry-form");
+  if (!form) return;
+  
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const serviceInput = form.querySelector('[name*="service"], [name*="offering"], select') || {value: "Standard Inquiry"};
+    const dateInput = form.querySelector('input[type="date"]') || {value: "Flexible"};
+    const timeInput = form.querySelector('input[type="radio"]:checked, input[type="time"], [name*="time"]') || {value: "Flexible"};
+    const nameInput = form.querySelector('input[type="text"], [name*="name"]') || {value: "Valued Client"};
+    const partyInput = form.querySelector('[name*="guest"], [name*="party"]') || {value: "1"};
+    const notesInput = form.querySelector('textarea, [name*="notes"]') || {value: "None"};
+
+    const msg = "*New Inquiry / Booking Request*\n" +
+                "• *Business:* Glamour Centre Spa (Spa)\n" +
+                "• *Selected Item:* " + (serviceInput.value || "Bespoke Request") + "\n" +
+                "• *Date & Time:* " + dateInput.value + " at " + timeInput.value + "\n" +
+                "• *Party Size:* " + partyInput.value + "\n" +
+                "• *Client Name:* " + nameInput.value + "\n" +
+                "• *Special Notes:* " + notesInput.value;
+
+    const waUrl = "https://wa.me/21626283838?text=" + encodeURIComponent(msg);
+    window.open(waUrl, "_blank");
+  });
+});
+</script>
+
+</body></html>

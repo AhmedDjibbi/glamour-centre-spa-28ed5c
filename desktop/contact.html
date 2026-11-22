@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior-y:auto;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script>
+(function(){
+  var origWarn = console.warn;
+  console.warn = function(){
+    if (arguments[0] && typeof arguments[0] === 'string' && arguments[0].indexOf('cdn.tailwindcss.com') !== -1) return;
+    origWarn.apply(console, arguments);
+  };
+})();
+</script>
+<script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "surface-container": "#20201c",
+          "surface-tint": "#d7c3b6",
+          "on-surface-variant": "#d1c4bc",
+          "surface-container-high": "#2a2a26",
+          "on-tertiary": "#2f312e",
+          "secondary-fixed": "#e6e2d8",
+          "on-secondary-fixed": "#1d1c16",
+          "on-tertiary-container": "#edede8",
+          "on-primary": "#3a2e25",
+          "inverse-surface": "#e5e2db",
+          "on-tertiary-fixed-variant": "#464744",
+          "on-error-container": "#ffdad6",
+          "tertiary-container": "#6a6b67",
+          "on-primary-fixed-variant": "#52443a",
+          "error": "#ffb4ab",
+          "outline-variant": "#4e453f",
+          "on-secondary": "#32302a",
+          "tertiary": "#c6c7c2",
+          "error-container": "#93000a",
+          "secondary-fixed-dim": "#cac6bd",
+          "on-secondary-fixed-variant": "#484740",
+          "surface-bright": "#3a3935",
+          "on-secondary-container": "#bcb8af",
+          "secondary": "#cac6bd",
+          "on-tertiary-fixed": "#1a1c19",
+          "primary-fixed-dim": "#d7c3b6",
+          "surface-container-lowest": "#0e0e0b",
+          "inverse-on-surface": "#31312c",
+          "tertiary-fixed-dim": "#c6c7c2",
+          "on-primary-fixed": "#241911",
+          "on-primary-container": "#ffe9db",
+          "outline": "#9a8f88",
+          "surface-container-low": "#1c1c18",
+          "surface-container-highest": "#353530",
+          "background": "#141410",
+          "secondary-container": "#4b4942",
+          "primary": "#d7c3b6",
+          "inverse-primary": "#6b5b51",
+          "on-error": "#690005",
+          "surface": "#141410",
+          "on-background": "#e5e2db",
+          "tertiary-fixed": "#e3e3de",
+          "on-surface": "#e5e2db",
+          "primary-container": "#78685d",
+          "primary-fixed": "#f4ded1",
+          "surface-variant": "#353530",
+          "surface-dim": "#141410"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-xl": "6rem",
+          "space-xs": "0.375rem",
+          "gutter": "2rem",
+          "space-sm": "0.75rem",
+          "space-md": "1.5rem",
+          "margin": "3rem",
+          "space-lg": "3rem"
+        },
+        "fontFamily": {
+          "label-md": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Shippori Mincho"
+          ],
+          "headline-md": [
+            "Shippori Mincho"
+          ],
+          "headline-sm": [
+            "Shippori Mincho"
+          ],
+          "headline-lg": [
+            "Shippori Mincho"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "1.4",
+              "letterSpacing": "0.08em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "1.5",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "10px",
+            {
+              "lineHeight": "1.4",
+              "letterSpacing": "0.1em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-xl": [
+            "48px",
+            {
+              "lineHeight": "1.2",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "1.3",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "1.4",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "1.25",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "1.6",
+              "fontWeight": "300"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "1.6",
+              "fontWeight": "300"
+            }
+          ]
+        }
+      },
+    },
+  }
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script>
+(function() {
+  function checkViewport() {
+    if (window.innerWidth < 768) {
+      var currentFile = window.location.pathname.split('/').pop() || 'index.html';
+      window.location.replace('../mobile/' + currentFile + window.location.search + window.location.hash);
+    }
+  }
+  checkViewport();
+  window.addEventListener('resize', checkViewport);
+})();
+</script>
+</head><body class="bg-surface font-body-md text-on-surface"><header class="fixed top-0 w-full z-50 bg-surface/60 backdrop-blur-md"><div class="h-20 max-w-7xl mx-auto px-gutter flex items-center justify-between"><div class="flex items-center gap-12"><span class="font-headline-md tracking-wider text-primary">GLAMOUR CENTRE</span><nav class="hidden md:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container rounded-lg"><a class="font-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="home" href="index.html">Home</a><a class="font-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="treatments" href="#">Treatments</a><a class="font-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="about" href="about.html">About</a><a class="font-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-sm" data-path="contact" href="contact.html">Contact</a></nav></div><div class="flex items-center gap-space-md"><a class="hidden lg:flex items-center gap-space-xs font-body-sm text-secondary hover:text-on-surface transition-colors" href="tel:26283838"><span class="material-symbols-outlined text-[18px]">call</span>26 283 838</a><a class="bg-primary text-on-primary font-label-md px-space-md py-space-sm rounded-lg hover:bg-primary-fixed transition-colors flex items-center gap-space-xs" href="#">Book on WhatsApp</a></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full bg-surface text-on-surface">
+<!-- HERO SECTION -->
+<section class="relative w-full h-[600px] flex items-start justify-center overflow-hidden -mt-20 pt-20">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center z-0" data-alt="Luxurious spa sanctuary with ambient warm lighting, polished stone surfaces, minimalist floral arrangements, and serene atmospheric shadows reflecting deep taupe and charcoal hues." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQRBq7UmE3DMdHm0bWSwobbeS1R4RgtCVT7aACtc5z9yGTr7quvaSvyT6dm93_N6r8iymRBD31KulGcu0VMLnu0tCMN00qzwMdPDJoYMsnx0H74HKOM8bGpBotTc_q0Ld8lgQTv5ZeHwCtaOnWgHTslqhMdJpTxbkLZGH-lJcGstcfKKutaiCiaJr9JlCzL2Ou3BTa9nCQ0Quihv5cSHyTssYtMSy0mRb_HFYOAdlOg9iDhjYJ0WIYV7Qr9NZpae25WWrKn1DTTi4Z')"></div>
+    <!-- ENFORCED SUBTLE BOTTOM FADE -->
+    <div class="absolute bottom-0 inset-x-0 h-28 md:h-44 pointer-events-none z-20" style="background: linear-gradient(to top, #171713 0%, rgba(11,15,25,0.7) 40%, transparent 100%);"></div>
+    
+<div class="absolute inset-0 bg-gradient-to-b from-surface/80 via-surface/60 to-surface z-10"></div>
+<div class="relative z-20 max-w-5xl mx-auto px-gutter text-center flex flex-col items-center">
+<div class="inline-flex items-center gap-space-xs bg-surface-container/80 backdrop-blur-md px-space-md py-space-xs rounded-full border border-outline-variant/30 mb-space-md">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<span class="font-label-md text-primary tracking-widest uppercase">Award of Excellence 2026</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-space-sm">
+        Glamour Centre Spa — Contact &amp; Inquiries
+      </h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mb-space-lg">
+        Immerse yourself in bespoke luxury. Connect with our concierge or schedule your private consultation.
+      </p>
+<div class="flex items-center gap-space-md">
+<a class="bg-primary text-on-primary font-label-md px-space-lg py-space-md rounded-lg hover:bg-primary-fixed transition-colors flex items-center gap-space-xs shadow-lg" href="#booking-section">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span> Schedule Consultation
+        </a>
+<a class="bg-surface-container-high/80 backdrop-blur-md text-on-surface font-label-md px-space-lg py-space-md rounded-lg hover:bg-surface-container transition-colors border border-outline-variant/30 flex items-center gap-space-xs" href="tel:26283838">
+<span class="material-symbols-outlined text-[18px]">call</span> Direct Line
+        </a>
+</div>
+</div>
+</section>
+<!-- SECTION 1: Interactive Concierge Inquiry & Appointment System -->
+<section class="max-w-7xl mx-auto px-gutter py-space-xl w-full" id="booking-section">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Info Column -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs text-primary font-label-md tracking-widest uppercase">
+<span class="w-8 h-[1px] bg-primary"><span></span></span>
+<span>Bespoke Booking</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Reserve Your Sanctuary Experience</h2>
+<p class="font-body-md text-on-surface-variant">
+          Select your preferred treatment, date, and time. Our concierge will curate every detail of your visit to ensure unhurried tranquility.
+        </p>
+<div class="p-space-md bg-surface-container-low rounded-xl border border-outline-variant/20 flex flex-col gap-space-sm mt-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">verified</span>
+<span class="font-body-sm text-on-surface font-medium">Complimentary Valet &amp; Private Suites</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span class="font-body-sm text-on-surface font-medium">24-hour advance notice appreciated</span>
+</div>
+</div>
+</div>
+<!-- Booking Form Card -->
+<div class="lg:col-span-8 bg-surface-container p-space-lg rounded-xl shadow-xl border border-outline-variant/20">
+<form class="flex flex-col gap-space-md" id="concierge-form" onsubmit="event.preventDefault(); alert('Redirecting to WhatsApp with your appointment request...');">
+<!-- Offering Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Select Offering</label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<label class="cursor-pointer bg-surface-container-low p-space-md rounded-lg border border-outline-variant/20 hover:border-primary transition-all flex flex-col gap-space-xs has-[:checked]:border-primary has-[:checked]:bg-primary-container/20">
+<input checked="" class="hidden" name="offering" type="radio" value="Hair Spa &amp; Styling"/>
+<span class="font-body-sm font-medium text-on-surface">Hair Spa &amp; Styling</span>
+<span class="font-label-sm text-on-surface-variant">90 MINS • 180 TND</span>
+</label>
+<label class="cursor-pointer bg-surface-container-low p-space-md rounded-lg border border-outline-variant/20 hover:border-primary transition-all flex flex-col gap-space-xs has-[:checked]:border-primary has-[:checked]:bg-primary-container/20">
+<input class="hidden" name="offering" type="radio" value="Aromatherapy Massage"/>
+<span class="font-body-sm font-medium text-on-surface">Aromatherapy Massage</span>
+<span class="font-label-sm text-on-surface-variant">75 MINS • 220 TND</span>
+</label>
+<label class="cursor-pointer bg-surface-container-low p-space-md rounded-lg border border-outline-variant/20 hover:border-primary transition-all flex flex-col gap-space-xs has-[:checked]:border-primary has-[:checked]:bg-primary-container/20">
+<input class="hidden" name="offering" type="radio" value="Bridal Glow Package"/>
+<span class="font-body-sm font-medium text-on-surface">Bridal Glow Package</span>
+<span class="font-label-sm text-on-surface-variant">180 MINS • 450 TND</span>
+</label>
+</div>
+</div>
+<!-- Date & Party Count -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Preferred Date</label>
+<input class="bg-surface-container-low text-on-surface px-space-md py-space-sm rounded-lg border border-outline-variant/30 focus:border-primary outline-none font-body-md" type="date" value="2026-06-15"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Party Count</label>
+<select class="bg-surface-container-low text-on-surface px-space-md py-space-sm rounded-lg border border-outline-variant/30 focus:border-primary outline-none font-body-md">
+<option>1 Guest (Solo Sanctuary)</option>
+<option>2 Guests (Duo Suite)</option>
+<option>3+ Guests (Private Group)</option>
+</select>
+</div>
+</div>
+<!-- Time Slot Pills -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Available Time Slots</label>
+<div class="flex flex-wrap gap-space-sm">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-low text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-body-sm border border-outline-variant/30" type="button">09:00 AM</button>
+<button class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary transition-colors font-body-sm" type="button">11:30 AM</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-low text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-body-sm border border-outline-variant/30" type="button">02:00 PM</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-low text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-body-sm border border-outline-variant/30" type="button">04:30 PM</button>
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-low text-on-surface hover:bg-primary hover:text-on-primary transition-colors font-body-sm border border-outline-variant/30" type="button">06:00 PM</button>
+</div>
+</div>
+<!-- Personal Info -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Full Name</label>
+<input class="bg-surface-container-low text-on-surface px-space-md py-space-sm rounded-lg border border-outline-variant/30 focus:border-primary outline-none font-body-md" placeholder="e.g. Sarah Ben Ali" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Contact Phone (WhatsApp)</label>
+<input class="bg-surface-container-low text-on-surface px-space-md py-space-sm rounded-lg border border-outline-variant/30 focus:border-primary outline-none font-body-md" placeholder="+216 XX XXX XXX" required="" type="tel"/>
+</div>
+</div>
+<!-- Notes Textarea -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-on-surface-variant uppercase">Special Requests / Preferences</label>
+<textarea class="bg-surface-container-low text-on-surface p-space-md rounded-lg border border-outline-variant/30 focus:border-primary outline-none font-body-md resize-none" placeholder="Mention any specific therapists, medical notes, or acoustic preferences..." rows="3"></textarea>
+</div>
+<!-- Action Button -->
+<div class="pt-space-sm flex justify-end">
+<button class="w-full md:w-auto bg-primary text-on-primary font-label-md px-space-xl py-space-md rounded-lg hover:bg-primary-fixed transition-colors flex items-center justify-center gap-space-xs shadow-lg" type="submit">
+<span class="material-symbols-outlined text-[18px]">chat</span> Book on WhatsApp
+            </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Operational Schedule Bento -->
+<section class="w-full bg-surface-container-low py-space-xl my-space-xl">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-end mb-space-lg">
+<div>
+<span class="font-label-md text-primary tracking-widest uppercase mb-space-xs block">Sanctuary Hours</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Operational Schedule</h2>
+</div>
+<p class="font-body-md text-on-surface-variant max-w-sm mt-space-sm md:mt-0">
+          Our doors remain open for scheduled rituals and walk-in consultations during the following hours.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Weekdays -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between shadow-md">
+<div>
+<div class="flex justify-between items-center mb-space-md">
+<span class="font-label-md text-primary tracking-widest uppercase">Monday — Thursday</span>
+<span class="material-symbols-outlined text-secondary">routine</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Standard Hours</h3>
+<p class="font-body-sm text-on-surface-variant mb-space-lg">Full access to hair studio, skin sanctuary, and massage suites.</p>
+</div>
+<div class="pt-space-md border-t border-outline-variant/20 flex justify-between items-center">
+<span class="font-body-sm text-on-surface-variant">Opening Time</span>
+<span class="font-headline-sm text-primary">09:00 — 20:00</span>
+</div>
+</div>
+<!-- Weekends -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between shadow-md">
+<div>
+<div class="flex justify-between items-center mb-space-md">
+<span class="font-label-md text-primary tracking-widest uppercase">Friday — Saturday</span>
+<span class="material-symbols-outlined text-secondary">spa</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Extended Retreat</h3>
+<p class="font-body-sm text-on-surface-variant mb-space-lg">Ideal for weekend bridal preparations and prolonged relaxation.</p>
+</div>
+<div class="pt-space-md border-t border-outline-variant/20 flex justify-between items-center">
+<span class="font-body-sm text-on-surface-variant">Opening Time</span>
+<span class="font-headline-sm text-primary">08:30 — 21:00</span>
+</div>
+</div>
+<!-- Sunday -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col justify-between shadow-md">
+<div>
+<div class="flex justify-between items-center mb-space-md">
+<span class="font-label-md text-primary tracking-widest uppercase">Sunday</span>
+<span class="material-symbols-outlined text-secondary">self_improvement</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">Private Sessions</h3>
+<p class="font-body-sm text-on-surface-variant mb-space-lg">Exclusive VIP bookings and bridal party lockouts available upon request.</p>
+</div>
+<div class="pt-space-md border-t border-outline-variant/20 flex justify-between items-center">
+<span class="font-body-sm text-on-surface-variant">Opening Time</span>
+<span class="font-headline-sm text-primary">10:00 — 18:00</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Direct Communication Channels -->
+<section class="max-w-7xl mx-auto px-gutter py-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-space-md">
+<!-- Address Card -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-container/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">location_on</span>
+</div>
+<h3 class="font-headline-sm text-on-surface">Location</h3>
+<p class="font-body-sm text-on-surface-variant">
+          Rue 14 Janvier Sousse,<br/>Khzema, Sousse 4051<br/>Tunisia
+        </p>
+<a class="font-label-md text-primary hover:underline flex items-center gap-space-xs mt-auto pt-space-sm" href="#map-section">
+          Get directions <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Phone Card -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-container/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">call</span>
+</div>
+<h3 class="font-headline-sm text-on-surface">Telephone</h3>
+<p class="font-body-sm text-on-surface-variant">
+          Direct line to concierge desk:<br/>
+<strong class="text-on-surface">26 283 838</strong>
+</p>
+<a class="font-label-md text-primary hover:underline flex items-center gap-space-xs mt-auto pt-space-sm" href="tel:26283838">
+          Call now <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- WhatsApp Card -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-container/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">chat</span>
+</div>
+<h3 class="font-headline-sm text-on-surface">WhatsApp Concierge</h3>
+<p class="font-body-sm text-on-surface-variant">
+          Instant messaging for fast appointment booking &amp; inquiries.
+        </p>
+<a class="font-label-md text-primary hover:underline flex items-center gap-space-xs mt-auto pt-space-sm" href="#">
+          Open chat <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Social & Email Card -->
+<div class="bg-surface-container p-space-lg rounded-xl flex flex-col gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-container/30 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">share</span>
+</div>
+<h3 class="font-headline-sm text-on-surface">Digital Presence</h3>
+<p class="font-body-sm text-on-surface-variant">
+          Inquiries: concierge@glamourcentre.tn<br/>
+          Instagram &amp; Facebook: @GlamourCentreSpa
+        </p>
+<a class="font-label-md text-primary hover:underline flex items-center gap-space-xs mt-auto pt-space-sm" href="#">
+          Follow stories <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Location Map & Directions Section -->
+<section class="max-w-7xl mx-auto px-gutter py-space-xl w-full" id="map-section">
+<div class="flex flex-col gap-space-md mb-space-lg">
+<span class="font-label-md text-primary tracking-widest uppercase">Find Your Way</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Map &amp; Directions</h2>
+<p class="font-body-md text-on-surface-variant max-w-xl">
+        Situated in the heart of Khzema, Sousse. Easily accessible with private parking facilities available for our esteemed guests.
+      </p>
+</div>
+<div class="relative w-full h-[450px] rounded-xl overflow-hidden shadow-2xl border border-outline-variant/20">
+<!-- Map Placeholder using data-location -->
+<div class="w-full h-full bg-cover bg-center filter grayscale contrast-125" data-alt="Stylized monochromatic map view of Sousse Khzema district highlighting Glamour Centre Spa location with precise pinpoint marker." data-location="Rue 14 Janvier Sousse, Khzema, Sousse 4051" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBNETEYw3QZMW2HoONDAVg63sIB81JnPAF9PIe7qNBOG0r6nwzXaS_qSvpNVzEXO4yfN960SsSMNeAC7jzGyYoakRqxckrmNQGBD1QTWOhXARK7uw3XWH5IdY2OCaFzXJWCbBRp92RnFvr4mk2eYfOyI2jphfFMyjqW7WouidxeN0qbN8b1PFcUWroNwnICVv2aPsic-zEI4CmlD13rqWeTRo3yl1w1WpPW0zOQYvAIwH2vUj7ZxEUrBtrMRhMpMtdfZ-ZpNSrDw1G1')"></div>
+<!-- Floating Direction Card Overlay -->
+<div class="absolute bottom-6 left-6 bg-surface/90 backdrop-blur-md p-space-md rounded-lg border border-outline-variant/30 max-w-sm flex flex-col gap-space-sm shadow-xl">
+<span class="font-headline-sm text-on-surface">Glamour Centre Spa</span>
+<p class="font-body-sm text-on-surface-variant">Rue 14 Janvier Sousse, Khzema, Sousse 4051</p>
+<a class="bg-primary text-on-primary font-label-md py-space-xs px-space-md rounded-lg hover:bg-primary-fixed transition-colors text-center" href="https://maps.google.com" target="_blank">
+          Open in Google Maps
+        </a>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low py-space-lg"><div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row justify-between items-center text-on-surface-variant font-body-sm"><p>© Glamour Centre Spa. All rights reserved.</p><div class="flex gap-space-md mt-space-sm md:mt-0"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="services.html">Terms of Service</a></div></div></footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector("form") || document.getElementById("booking-form") || document.getElementById("inquiry-form");
+  if (!form) return;
+  
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const serviceInput = form.querySelector('[name*="service"], [name*="offering"], select') || {value: "Standard Inquiry"};
+    const dateInput = form.querySelector('input[type="date"]') || {value: "Flexible"};
+    const timeInput = form.querySelector('input[type="radio"]:checked, input[type="time"], [name*="time"]') || {value: "Flexible"};
+    const nameInput = form.querySelector('input[type="text"], [name*="name"]') || {value: "Valued Client"};
+    const partyInput = form.querySelector('[name*="guest"], [name*="party"]') || {value: "1"};
+    const notesInput = form.querySelector('textarea, [name*="notes"]') || {value: "None"};
+
+    const msg = "*New Inquiry / Booking Request*\n" +
+                "• *Business:* Glamour Centre Spa (Spa)\n" +
+                "• *Selected Item:* " + (serviceInput.value || "Bespoke Request") + "\n" +
+                "• *Date & Time:* " + dateInput.value + " at " + timeInput.value + "\n" +
+                "• *Party Size:* " + partyInput.value + "\n" +
+                "• *Client Name:* " + nameInput.value + "\n" +
+                "• *Special Notes:* " + notesInput.value;
+
+    const waUrl = "https://wa.me/21626283838?text=" + encodeURIComponent(msg);
+    window.open(waUrl, "_blank");
+  });
+});
+</script>
+
+</body></html>

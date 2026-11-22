@@ -1,0 +1,36 @@
+{
+  "business_name": "Glamour Centre Spa",
+  "slug": "glamour_centre_spa_28ed5c",
+  "projectId": "13311656244740799656",
+  "tokens": {
+    "industry": "spa",
+    "mood": "Authentic Photo-Extracted (#78685D / #A09D94)",
+    "mood_description": "A bespoke luxury visual atmosphere reflecting Glamour Centre Spa, extracted directly from authentic venue photography. Anchored in rich primary #78685D with warm #A09D94 and glowing #E9E9E4 accents, pairing architectural Shippori Mincho headlines with high-legibility Inter copy, set against deep atmospheric background #171713.",
+    "palette": {
+      "primary": "#78685D",
+      "secondary": "#A09D94",
+      "accent": "#E9E9E4",
+      "surface": "#171713",
+      "background": "#171713"
+    },
+    "typography": {
+      "headline": "Shippori Mincho",
+      "body": "Inter"
+    },
+    "action": {
+      "action_label": "Book on WhatsApp",
+      "catalog_name": "Treatments & Rituals",
+      "unit_name": "Ritual"
+    }
+  },
+  "screens": {
+    "home_desktop": "9e3945a032f5489a917d1858066b2a5b",
+    "home_mobile": "9caaf91b6bc141a090cea3f5b79a8bd4",
+    "services_desktop": "6e1d1679d3194620aeeefef9c44d47a0",
+    "services_mobile": "1763bfee6d984a459f940b4806cec78f",
+    "about_desktop": "6c34498788af4c3997edba2bfc20b1f3",
+    "about_mobile": "e272f07220fe4364a4ced672bfded31e",
+    "contact_desktop": "2cedfad5d6e94a31bb8e536fcee1cb65",
+    "contact_mobile": "c02d4ea0ee8143d1af8f6c28b2b4296d"
+  }
+}
